@@ -187,12 +187,12 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 type_variable=1;
-                Toast.makeText(MainActivity.this,"BOTONES UP/DOWN ACTIVADOS RIGHT/LEFT DESACTIVADOS",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"BOTONES UP/DOWN ACTIVADOS RIGHT/LEFT DESACTIVADOS",Toast.LENGTH_LONG).show();
                 PokemonAnterior.setEnabled(false);
                 PokemonSiguiente.setEnabled(false);
                 decision=1;
                 newPokSearch = type_especific[i];
-                Toast.makeText(MainActivity.this,"SE ACTIVARAN DE NUEVO AL CLICAR EL BOTON AMARILLO",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"SE ACTIVARAN DE NUEVO AL CLICAR EL BOTON AMARILLO",Toast.LENGTH_LONG).show();
                 fetchData process1 = new fetchData("type/"+newPokSearch,decision);
                 process1.execute();
                 PokemonInferior.setEnabled(true);
